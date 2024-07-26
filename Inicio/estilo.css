@@ -1,0 +1,147 @@
+body::before {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    overflow: auto;
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('images/fondo1.jpg') no-repeat center center fixed;
+    background-size: cover;
+    z-index: -1;
+}
+
+body {
+    margin: 0;
+}
+
+/* Estilos generales que se mantienen para otras páginas */
+.container {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    border-radius: 25px;
+    text-align: center;
+    width: 60%; /* Ajusta el ancho del contenedor según sea necesario */
+    background-color: white;
+    margin: auto; /* Centra el contenedor en la pantalla */
+}
+
+.container h2 {
+    font-size: 28px;
+    color: black;
+    margin: 0;
+}
+
+form {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    padding: 50px 35px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 50%; /* Ajusta el ancho del formulario según sea necesario */
+    margin: auto; /* Centra el formulario en la pantalla */
+    margin-top: 30px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* Resto de estilos... */
+
+.input-wrapper {
+    position: relative;
+    width: 90%;
+    margin-bottom: 20px;
+}
+
+input {
+    color: #0d0d0d;
+    padding: 20px 15px 20px 60px;
+    width: 100%;
+    border-radius: 25px;
+    border: 0;
+    box-shadow: 0 0 20px  rgba(255, 132, 39, 1);
+    outline: none;
+    font-size: 16px;
+}
+
+input::placeholder {
+    font-size: 16px;
+    color: #BBBBE2;
+}
+
+
+.input-icon {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-55%);
+    filter: invert(51%) sepia(78%) saturate(574%) hue-rotate(354deg) brightness(104%) contrast(101%);
+}
+
+.btn {
+    padding: 20px;
+    background: linear-gradient(
+        90deg,
+        rgba(255, 132, 39, 1) 0%, /* Cambia el primer color del degradado */
+        rgba(255, 132, 39, 1) 100%); /* Cambia el segundo color del degradado */
+    box-shadow: 0 0 20px rgba(255, 132, 39, 0.7); /* Cambia el color de la sombra */
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 25px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background: rgb(252, 174, 115); /* Cambia el color de fondo al hacer hover */
+}
+
+
+.success {
+    position: absolute;
+    top: 50px;
+    color: #00C83C;
+    font-size: 18px;
+}
+
+.error {
+    position: absolute;
+    top: 50px;
+    color: #E02D00;
+    font-size: 18px;
+}
+
+@media(max-width:991px) {
+    body {
+        padding: 10px;
+    }
+
+    form {
+        padding: 20px;
+        width: 100%;
+    }
+
+    .input-wrapper {
+        width: 90%;
+        margin-bottom: 35px;
+    }
+
+    input {
+        padding: 20px 0px 20px 45px;
+    }
+
+    .input-icon {
+        height: 20px;
+        width: 20px;
+    }
+}
