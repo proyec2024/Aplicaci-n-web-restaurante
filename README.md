@@ -33,6 +33,7 @@ comensales.
     • Modificar información de contacto y horarios de apertura. 
 
 Objetivos.
+
     • Desarrollar una página web atractiva y funcional que represente la identidad y el
     ambiente del restaurante.
     
